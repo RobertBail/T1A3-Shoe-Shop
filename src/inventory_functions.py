@@ -16,12 +16,12 @@ main_options_list = {
     
     " View Shoe Shop Inventory List": "general_menu('Shoe Shop Inventory List', si_options_list)",
     " Enter Stock Entry Menu": "general_menu('Stock Entry', se_options_list)",
-   
+   #add sort list alphabetically function? sorted with lambda function in key
 }
 
 si_options_list {
     " View Shoe Shop Inventory List": "si_display(si_file_path)",
-   
+   #add sort list alphabetically function? sorted with lambda function in key
 }
 
 se_options_list{
@@ -32,4 +32,4 @@ se_options_list{
 
 #men-and-boys, women-and-girls
 #sizes_available_US(use -- to indicate size unavailable)
-#sort list alphabetically function?
+#add sort list alphabetically function? sorted with lambda function in key
