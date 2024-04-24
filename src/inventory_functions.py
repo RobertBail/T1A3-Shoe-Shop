@@ -36,29 +36,29 @@ def add_product(file_name):
     
 #def update_sizes_available(file_name):
 
-#def read_csv(file_name):
-    # with open(file_name, "r", newline='') as f:        
-      #       reader = csv.reader(f)
-       #      data = list(reader)
-       #      return data
+def read_csv(file_name):
+     with open(file_name, "r", newline='') as f:        
+             reader = csv.reader(f)
+             data = list(reader)
+             return data
 
-#def sort_alphabetically(data):
-      #    print(data)
-      #    header = data[0]         
-      #    sorted_data = sorted(data[2:], key=lambda x: x[1])
-      #    sorted_data.insert(1, header)
-      #    return sorted_data
-          
+def sort_alphabetically(data):
+          print(data)
+          #header = data[1]         
+          sorted_data = sorted(data[1:], key=lambda x: x[0])
+          #sorted_data.insert(1, header)
+          return sorted_data
+          #len or range
 
-#def write_csv(file_name, sorted_data):
-     # with open(file_name, 'w', newline='') as csv_file:
-       #    writer = csv.writer(csv_file)
-       #    writer.writerows(sorted_data)
+def write_csv(file_name, sorted_data):
+      with open(file_name, 'w', newline='') as csv_file:
+          writer = csv.writer(csv_file)
+          writer.writerows(sorted_data)
 
-#def sort_csv(file_name):
- #   data = read_csv(file_name)
-  #  sorted_data = sort_alphabetically(data)
-  #  write_csv("sorted_" + file_name, sorted_data)
+def sort_csv(file_name):
+    data = read_csv(file_name)
+    sorted_data = sort_alphabetically(data)
+    write_csv("sorted_" + file_name, sorted_data)
 
-#sort_csv('inventory_list.csv')
+sort_csv('inventory_list.csv')
 #or sorted_inventory_list.csv

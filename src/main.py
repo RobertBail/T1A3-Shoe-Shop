@@ -4,7 +4,7 @@ import os.path
 
 
 #from inventory_functions import list
-from inventory_functions import (view_inventory, add_product)
+from inventory_functions import (view_inventory, add_product, read_csv)
 #from inventory_functions import (view_inventory, sort_alphabetically, read_csv, write_csv, sort_csv, 
 #add_product)
  #remove_product, update_quantity, update_price, update_sizes_available
@@ -35,7 +35,7 @@ def create_menu():
     print("4. Enter 4 to update quantity of a product")
     print("5. Enter 5 to update price of a product")
     print("6. Enter 6 to update sizes available of a product")
-    print("7. Enter 7 to sort list alphabetically")
+    print("7. Enter 7 to sort list alphabetically (OUT OF ORDER)")
     print("8. Enter 8 to exit")
 #add sort list alphabetically function?
     user_choice = input("Enter your selection: ")
@@ -50,7 +50,7 @@ file_name="inventory_list.csv"
 if (not os.path.isfile(file_name)):
    print("Creating inventory file as it doesn't exist")
    f = open(file_name, "w")
-   f.write("product,quantity,price,sizes_available_US")
+   f.write("product,quantity,price,sizes_available_US\n")
    f.close()
 
 choice =""
@@ -70,8 +70,10 @@ while choice!="8":
    elif (choice == "6"):
       update_sizes_available(file_name)
    elif (choice == "7"):
-      read_csv(file_name)
-      # stack on top? sort_alphabetically(data), write_csv(file_name, sorted_data), sort_csv(file_name)
+       read_csv(file_name)
+       #sort_alphabetically(data)
+       #write_csv(file_name, sorted_data)
+       #sort_csv(file_name)
    elif (choice == "8"):
       print("You have exited the inventory")
    else:
