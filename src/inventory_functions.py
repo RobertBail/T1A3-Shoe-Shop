@@ -1,35 +1,64 @@
 import os
 import csv
-
-from colored import Fore, Back, Style
 from prettytable import PrettyTable
-#from datetime import datetime
-import math as mt
 
-si_file_path="./data/inventory_list.csv"
-si_header="product,quantity,price,sizes_available_US\n"
+def view_inventory(file_name):
+    #try:
+        with open(file_name, "r", newline='') as f:        
+             table_contents = csv.reader(f)            
+             table = PrettyTable()
+             file_data = list(table_contents)
+             table.field_names = file_data[0]
+             for data in file_data[1:-1]:
+              if data:
+                 table.add_row(data)
+             print(table)
 
-menu_list = []
 
-# Main Menu Options
-main_options_list = {
+def add_product(file_name):
+    print("Add a product to the inventory list")
+    product = input("Enter the product: ")
+    quantity = input("Enter the quantity: ")
+    price = input("Enter the price, $: ")
+    sizes_available_US = input("Enter the sizes available (use -- to indicate size unavailable): ")
+    with open(file_name, "a", newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow([product, quantity, price, sizes_available_US])
+# I was intending to add the below if possible
+    return print("New product added to the inventory list")
+
+
+#def remove_product(file_name):
     
-    " View Shoe Shop Inventory List": "general_menu('Shoe Shop Inventory List', si_options_list)",
-    " Enter Stock Entry Menu": "general_menu('Stock Entry', se_options_list)",
-   #add sort list alphabetically function? sorted with lambda function in key
-}
+#def update_quantity(file_name):
 
-si_options_list {
-    " View Shoe Shop Inventory List": "si_display(si_file_path)",
-   #add sort list alphabetically function? sorted with lambda function in key
-}
+#def update_price(file_name): 
+    
+#def update_sizes_available(file_name):
 
-se_options_list{
-    #" Enter a new stock item": "enter_stock_item('Entry', se_file_path, si_file_path)",
-    " Enter a new stock item": "create_submenu('New Stock Item', si_file_path)",
-    " Delete a stock item": "delete_submenu('Stock Items', si_file_path, si_header)",
-}
+#def read_csv(file_name):
+    # with open(file_name, "r", newline='') as f:        
+      #       reader = csv.reader(f)
+       #      data = list(reader)
+       #      return data
 
-#men-and-boys, women-and-girls
-#sizes_available_US(use -- to indicate size unavailable)
-#add sort list alphabetically function? sorted with lambda function in key
+#def sort_alphabetically(data):
+      #    print(data)
+      #    header = data[0]         
+      #    sorted_data = sorted(data[2:], key=lambda x: x[1])
+      #    sorted_data.insert(1, header)
+      #    return sorted_data
+          
+
+#def write_csv(file_name, sorted_data):
+     # with open(file_name, 'w', newline='') as csv_file:
+       #    writer = csv.writer(csv_file)
+       #    writer.writerows(sorted_data)
+
+#def sort_csv(file_name):
+ #   data = read_csv(file_name)
+  #  sorted_data = sort_alphabetically(data)
+  #  write_csv("sorted_" + file_name, sorted_data)
+
+#sort_csv('inventory_list.csv')
+#or sorted_inventory_list.csv
