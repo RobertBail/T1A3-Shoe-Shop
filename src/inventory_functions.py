@@ -1,9 +1,10 @@
 import os
 import csv
+#import itertools
 from prettytable import PrettyTable
 
 def view_inventory(file_name):
-    #try:
+    try:
         with open(file_name, "r", newline='') as f:        
              table_contents = csv.reader(f)            
              table = PrettyTable()
@@ -13,9 +14,11 @@ def view_inventory(file_name):
               if data:
                  table.add_row(data)
              print(table)
+    except FileNotFoundError:
+        return []
 
 def view_updated_inventory(file_name2):
-      #try:
+      try:
         with open(file_name2, "r", newline='') as f:        
              table_contents = csv.reader(f)            
              table = PrettyTable()
@@ -25,9 +28,11 @@ def view_updated_inventory(file_name2):
               if data:
                  table.add_row(data)
              print(table)
+      except FileNotFoundError:
+        return []
 
 def view_sorted_inventory(file_name3):
-    #try:
+    try:
         with open(file_name3, "r", newline='') as f:        
              table_contents = csv.reader(f)            
              table = PrettyTable()
@@ -37,58 +42,66 @@ def view_sorted_inventory(file_name3):
               if data:
                  table.add_row(data)
              print(table)
+    except FileNotFoundError:
+        return []
 
 def add_product(file_name):
     print("Add a product to the inventory list")
+    ID_No = input("Enter new product ID number (add to last): ")
+#(above) I was trying to find how to auto-increment this ideally, but couldn't find a great example/solution for this format/situation, 
+#eg. they often involved several more steps and a bit confusing, or didn't look to suit this purpose
     product = input("Enter the product: ")
     quantity = input("Enter the quantity: ")
     price = input("Enter the price, $: ")
     sizes_available_US = input("Enter the sizes available (use -- to indicate size unavailable): ")
+    
+   # data = []
     with open(file_name, "a", newline='') as f:
-        writer = csv.writer(f)
-        writer.writerow([product, quantity, price, sizes_available_US])
+        writer = csv.writer(f, delimiter=',')
+        writer.writerow([ID_No, product, quantity, price, sizes_available_US])
 
     return print("New product added to the inventory list")
 
 
 def remove_product_list(file_name):
-    product = input("Enter the product that will be removed (please use exact name/spelling): ")
+    ID_No = input("Enter the ID number (product) that will be removed: ")
     inventory_list = []
     with open(file_name, "r") as f:
          reader = csv.reader(f)
          for row in reader:
-             if (product != row[0]):
+             if (ID_No != row[0]):
               inventory_list.append(row)
     with open(file_name, "w") as f:
          writer = csv.writer(f)
          writer.writerows(inventory_list)
 
 def remove_product_UpdatedList(file_name2):
-    product = input("Enter the product that will be removed (please use exact name/spelling): ")
+    ID_No = input("Enter the ID number (product) that will be removed: ")
     inventory_list = []
     with open(file_name2, "r") as f:
          reader = csv.reader(f)
          for row in reader:
-             if (product != row[0]):
+             if (ID_No != row[0]):
               inventory_list.append(row)
     with open(file_name2, "w") as f:
          writer = csv.writer(f)
          writer.writerows(inventory_list)
 
 def remove_product_SortedList(file_name3):
-    product = input("Enter the product that will be removed (please use exact name/spelling): ")
+    ID_No = input("Enter the ID number (product) that will be removed: ")
     inventory_list = []
     with open(file_name3, "r") as f:
          reader = csv.reader(f)
          for row in reader:
-             if (product != row[0]):
+             if (ID_No != row[0]):
               inventory_list.append(row)
     with open(file_name3, "w") as f:
          writer = csv.writer(f)
          writer.writerows(inventory_list)
 
 def update_product(file_name2):
-  
+
+    ID_No = input("Enter the ID number (product) to be updated: ")
     product = input("Enter the product you want to update: ")
     quantity = input("Enter the updated quantity: ")
     price = input("Enter the updated price, $: ")
@@ -96,9 +109,11 @@ def update_product(file_name2):
     
     with open(file_name2, "a", newline='') as f2:
         writer = csv.writer(f2)
-        writer.writerow([product, quantity, price, sizes_available_US])
+        writer.writerow([ID_No, product, quantity, price, sizes_available_US])
 
-                 
+#I originally wanted (thought the user could) modify this data individually/separately in each row, ie. separate functions/options for update quantity, price, sizes_available_US, and it wouldn't be much different than add_product function,
+#but that doesn't seem to be as possible or easy, haven't seen a good example for this situation with a csv, so the solution for now is adding the updated rows to another file, updated_inventory_list.csv               
+
 #def update_price(file_name): 
     
 #def update_sizes_available(file_name):

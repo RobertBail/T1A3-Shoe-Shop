@@ -1,7 +1,1 @@
-product,quantity,price,sizes_available_US
-Nike Max Brand,55,98.00,7-14
-Sportsmax Brand,67,99.00,6-11
-On Cloud X 3 Mens (blk),69,235.00,8--10-14
-Reebok Floatride Energy 5 Mens,49,78.99,7.5-10--13
-Reebok Nano X4 Mens (WHITE BLACK),40,211.99,10-15
-,,,
+ID_No,product,quantity,price,sizes_available_US
