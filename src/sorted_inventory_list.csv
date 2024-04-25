@@ -1,3 +1,6 @@
+product,quantity,price,sizes_available_US
+A New Shoe Brand,55,99.00,6-12
+ABC sneakers,45,89.00,6-14
 Adidas Pro Brand,44,59.00,7-12
 Ascent Alpha 2 (4e X-Wide) Mens (BLACK),49,226.45,6-15
 Ascent Alpha 2 (4e X-Wide) Mens (WHEAT),44,226.45,6-15
@@ -16,6 +19,7 @@ Brooks Adrenaline Gts 23 Womens (BLACK),43,259.99,6-12
 Brooks Ghost 15 (D Wide) Womens (blk),78,249.99,6-12
 Brooks Glycerin Gts 21 Womens (BLUE),58,269.99,6-12
 Brooks Glycerin Gts 21 Womens (COCONUT),52,269.99,7-11
+Clown Sports Pro,66,88.00,9-16
 Hoka Arahi 7 Mens,32,249.00,7-13--15
 Hoka Arahi 7 Womens (ROSE GOLD),39,249.00,7-11
 Hoka Bondi 8 (2e Wide) Mens,29,275.00,7.5-15
@@ -23,7 +27,7 @@ Hoka Bondi 8 Mens (blue),24,277.99,8-13
 Hoka Bondi 8 Mens (silver),26,277.99,8-13
 Hoka Bondi 8 Womens (PINK CLAY),77,277.99,6.5-11
 Hoka Clifton 9 Gore-Tex Womens (black),57,249.99,6.5-12
-Hoka Clifton 9 Mens,25,259.99,7.5-14
+Hoka Clifton 9 Mens,33,245.00,8-14
 Hoka Gaviota 5 Mens (blue),23,278.00,8.5-13
 Hoka Gaviota 5 Mens (white),29,278.00,8.5-13
 Hoka Gaviota 5 Womens (BLUE),34,278.00,7-11
@@ -47,8 +51,8 @@ On Cloudflyer 4 Womens (WHITE HAY),27,179.90,7--9-11
 Reebok Court Advance Mens (blk),67,88.99,5-13
 Reebok Dmx Comfort+ Womens (ROSE),44,69.99,7-11
 Reebok Floatride Energy 5 Mens,59,99.99,7.5-9.5--11-13
-Reebok Nano X4 Mens (WHITE BLACK),55,219.99,7-13
 Saucony Endorphin Pro 4 Mens,45,332.99,8-13
 Saucony Endorphin Speed 4 Mens,52,278.99,8--9.5-13
 Saucony Triumph 21 Womens (WHITE INDIGO),66,259.99,6.5-11
-Veja Urca Womens (WHITE),54,179.99,6-10
+Sportsmax Brand,47,97.00,6-12
+Veja Urca Womens (WHITE),78,250.00,6-10
