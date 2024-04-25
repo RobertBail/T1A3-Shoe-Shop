@@ -109,7 +109,7 @@ def update_product(file_name2):
     sizes_available_US = input("Enter the updated Sizes Available (US): ")
     
     with open(file_name2, "a", newline='') as f2:
-        writer = csv.writer(f2)
+        writer = csv.writer(f2, delimiter=',')
         writer.writerow([product, quantity, price, sizes_available_US, ID_No])
 
 #I originally wanted (thought the user could) modify this data individually/separately in each row, ie. separate functions/options for update quantity, price, sizes_available_US, and it wouldn't be much different than add_product function,
