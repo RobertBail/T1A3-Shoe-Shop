@@ -46,7 +46,7 @@ def view_sorted_inventory(file_name3):
         return []
 
 def add_product(file_name):
-    print("Add a product to the inventory list")
+    print("*Add a product to the inventory list*")
     ID_No = input("Enter new product ID number (add to last): ")
 #(above) I was trying to find how to auto-increment this ideally, but couldn't find a great example/solution for this format/situation, 
 #eg. they often involved several more steps and a bit confusing, or didn't look to suit this purpose
@@ -65,7 +65,7 @@ def add_product(file_name):
 
 
 def remove_product_list(file_name):
-    ID_No = input("Enter the ID number (product) that will be removed: ")
+    ID_No = input("Enter the ID number of product that will be removed: ")
     inventory_list = []
     with open(file_name, "r") as f:
          reader = csv.reader(f)
@@ -77,7 +77,7 @@ def remove_product_list(file_name):
          writer.writerows(inventory_list)
 
 def remove_product_UpdatedList(file_name2):
-    ID_No = input("Enter the ID number (product) that will be removed: ")
+    ID_No = input("Enter the ID number of product that will be removed: ")
     inventory_list = []
     with open(file_name2, "r") as f:
          reader = csv.reader(f)
@@ -89,7 +89,7 @@ def remove_product_UpdatedList(file_name2):
          writer.writerows(inventory_list)
 
 def remove_product_SortedList(file_name3):
-    ID_No = input("Enter the ID number (product) that will be removed: ")
+    ID_No = input("Enter the ID number of product that will be removed: ")
     inventory_list = []
     with open(file_name3, "r") as f:
          reader = csv.reader(f)
@@ -101,9 +101,9 @@ def remove_product_SortedList(file_name3):
          writer.writerows(inventory_list)
 
 def update_product(file_name2):
-
-    ID_No = input("Enter the ID number (product) to be updated: ")
-    product = input("Enter the product you want to update: ")
+    print("*Updating a product in the inventory list*")
+    ID_No = input("Enter the ID number of product to be updated: ")
+    product = input("Enter the product you need to update: ")
     quantity = input("Enter the updated quantity: ")
     price = input("Enter the updated price, $: ")
     sizes_available_US = input("Enter the updated Sizes Available (US): ")
