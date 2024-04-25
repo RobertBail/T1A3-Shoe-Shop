@@ -2,32 +2,10 @@ import os.path
 #from colored import Fore, Back, Style
 #from prettytable import PrettyTable
 
-
-#from inventory_functions import list
 from inventory_functions import (view_inventory, view_updated_inventory, view_sorted_inventory, 
 add_product, remove_product_list, remove_product_UpdatedList, remove_product_SortedList, update_product, read_csv)
-#from inventory_functions import (view_inventory, sort_alphabetically, read_csv, write_csv, sort_csv, 
-#add_product)
- #remove_product, update_quantity, update_price, update_sizes_available
-#from inventory_functions import clear_console, general_menu, check_csv
-#from inventory_functions import (
-  #  main_options_list,
-   # si_file_path,
-   # si_header,
-   
-#)
 
-#check_csv(si_file_path, si_header)
-
-
-#clear_console()
-
-#print(
-    #f"{Style.BOLD}{Fore.BLUE}Welcome to the Shoe Shop Inventory!{Style.reset}\n"
-#)
 print("Welcome to the Shoe Shop Inventory!")
-   
-#general_menu("Main", main_options_list)
 
 def create_menu():
     print("1. Enter 1 to view the Inventory List")
