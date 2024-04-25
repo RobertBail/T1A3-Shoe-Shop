@@ -1,59 +1,58 @@
-ID_No,product,quantity,price,sizes_available_US
-1,Ascent Alpha 2 (4e X-Wide) Mens (WHEAT),44,226.45,6-15
-2,Ascent Alpha 2 (4e X-Wide) Mens (BLACK),49,226.45,6-15
-3,Ascent Cirrus Womens (BLACK),75,169.99,6-11
-4,Ascent Stratus Womens (WHITE),55,189.99,6-11
-5,Ascent Stratus Womens (DEEP OCEAN),69,179.99,6-11
-6,Asics Gel-Kayano 30 Mens,33,269.50,8-16
-7,Asics Gel-Kayano 30 (4e X-Wide) Mens,50,270.99,7-16
-8,Asics Gel-Kayano 30 Womens,45,269.00,5-13
-9,Asics Gel-Nimbus 26 Womens (MINT),33,240.00,6-13
-10,Asics Gt-2000 12 Womens (BLACK),37,229.99,6-12
-11,Asics Gt-2000 12 (D Wide) Womens (BLACK),45,229.99,6-11--13
-12,Brooks Adrenaline Gts 23 Womens (BLACK),43,259.99,6-12
-13,Brooks Adrenaline Gts 23 Mens,37,259.99,7-10--12-15
-14,Brooks Addiction Walker 2 (2e Wide),41,239.99,8-15
-15,Brooks Ghost 15 (D Wide) Womens (blk),78,249.99,6-12
-16,Brooks Glycerin Gts 21 Womens (BLUE),58,269.99,6-12
-17,Brooks Glycerin Gts 21 Womens (COCONUT),52,269.99,7-11
-18,Hoka Arahi 7 Mens,32,249.00,7-13--15
-19,Hoka Arahi 7 Womens (ROSE GOLD),39,249.00,7-11
-20,Hoka Bondi 8 (2e Wide) Mens,29,275.00,7.5-15
-21,Hoka Bondi 8 Womens (PINK CLAY),77,277.99,6.5-11
-22,Hoka Bondi 8 Mens (silver),26,277.99,8-13
-23,Hoka Bondi 8 Mens (blue),24,277.99,8-13
-24,Hoka Clifton 9 Gore-Tex Womens (black),57,249.99,6.5-12
-25,Hoka Gaviota 5 Mens (white),29,278.00,8.5-13
-26,Hoka Gaviota 5 Mens (blue),23,278.00,8.5-13
-27,Hoka Gaviota 5 Womens (ROSE GOLD),45,278.00,7-11
-28,Hoka Gaviota 5 Womens (BLUE),34,278.00,7-11
-29,Merrell Siren Traveller 3 Womens (brindle),68,199.99,6-11
-30,Merrell Siren Traveller 3 Womens (black),59,118.99,6-11
-31,Mizuno Wave Luminous 2 Womens (WHITE),45,219.99,6.5-12
-32,Mizuno Wave Luminous 2 Womens (BLACK),56,219.99,6.5-11
-33,New Bal Fresh Foam X 1080 V13 (blk),44,249.99,8-11--13--15
-34,New Bal Fresh Foam X 1080 V13 (wte),39,249.99,8-11--13--15
-35,New Bal Fresh Foam 880 V13 (2e),56,178.99,8-12--14
-36,New Bal Fresh Foam 880 V13 (D Wide) W (blk),78,178.99,6-11
-37,New Bal Fresh Foam 880 V13 (D Wide) W (blue),65,178.99,9
-38,On Cloud X 3 Mens (blk),47,245.89,7.5-14
-39,On Cloud X 3 Mens (wte),49,245.89,7.5-14
-40,On Cloudeclipse Mens (black),35,269.99,8.5-14
-41,On Cloudeclipse Mens (FLAME),33,269.99,10--12
-42,On Cloudflyer 4 Womens (WHITE HAY),27,179.90,7--9-11
-43,On Cloudflyer 4 Womens (BLACK WHITE),36,179.90,6-11
-44,Reebok Dmx Comfort+ Womens (ROSE),44,69.99,7-11
-45,Reebok Floatride Energy 5 Mens,59,99.99,7.5-9.5--11-13
-46,Reebok Court Advance Mens (blk),67,88.99,5-13
-47,Saucony Endorphin Pro 4 Mens,45,332.99,8-13
-48,Saucony Endorphin Speed 4 Mens,52,278.99,8--9.5-13
-49,Saucony Triumph 21 Womens (WHITE INDIGO),66,259.99,6.5-11
-50,Adidas Pro Brand,44,59.00,7-12
-51,Nike Max Brand,46,97.00,7-13
-52,A New Shoe Brand,55,99.00,6-12
-53,Sportsmax Brand,47,97.00,6-12
-54,Hoka Clifton 9 Mens,33,245.00,8-14
-55,Clown Sports Pro,66,88.00,9-16
-56,Veja Urca Womens (WHITE),78,250.00,6-10
-57,ABC sneakers,45,89.00,6-14
-58,Test Brand Sports,47,79.00,8-14
+product,quantity,price,sizes_available_US,ID_No
+Ascent Alpha 2 (4e X-Wide) Mens (WHEAT),44,226.45,6-15,1
+Ascent Alpha 2 (4e X-Wide) Mens (BLACK),49,226.45,6-15,2
+Ascent Cirrus Womens (BLACK),75,169.99,6-11,3
+Ascent Stratus Womens (WHITE),55,189.99,6-11,4
+Ascent Stratus Womens (DEEP OCEAN),69,179.99,6-11,5
+Asics Gel-Kayano 30 Mens,33,269.50,8-16,6
+Asics Gel-Kayano 30 (4e X-Wide) Mens,50,270.99,7-16,7
+Asics Gel-Kayano 30 Womens,45,269.00,5-13,8
+Asics Gel-Nimbus 26 Womens (MINT),33,240.00,6-13,9
+Asics Gt-2000 12 Womens (BLACK),37,229.99,6-12,10
+Asics Gt-2000 12 (D Wide) Womens (BLACK),45,229.99,6-11--13,11
+Brooks Adrenaline Gts 23 Womens (BLACK),43,259.99,6-12,12
+Brooks Adrenaline Gts 23 Mens,37,259.99,7-10--12-15,13
+Brooks Addiction Walker 2 (2e Wide),41,239.99,8-15,14
+Brooks Ghost 15 (D Wide) Womens (blk),78,249.99,6-12,15
+Brooks Glycerin Gts 21 Womens (BLUE),58,269.99,6-12,16
+Brooks Glycerin Gts 21 Womens (COCONUT),52,269.99,7-11,17
+Hoka Arahi 7 Mens,32,249.00,7-13--15,18
+Hoka Arahi 7 Womens (ROSE GOLD),39,249.00,7-11,19
+Hoka Bondi 8 (2e Wide) Mens,29,275.00,7.5-15,20
+Hoka Bondi 8 Womens (PINK CLAY),77,277.99,6.5-11,21
+Hoka Bondi 8 Mens (silver),26,277.99,8-13,22
+Hoka Bondi 8 Mens (blue),24,277.99,8-13,23
+Hoka Clifton 9 Gore-Tex Womens (black),57,249.99,6.5-12,24
+Hoka Gaviota 5 Mens (white),29,278.00,8.5-13,25
+Hoka Gaviota 5 Mens (blue),23,278.00,8.5-13,26
+Hoka Gaviota 5 Womens (ROSE GOLD),45,278.00,7-11,27
+Hoka Gaviota 5 Womens (BLUE),34,278.00,7-11,28
+Merrell Siren Traveller 3 Womens (brindle),68,199.99,6-11,29
+Merrell Siren Traveller 3 Womens (black),59,118.99,6-11,30
+Mizuno Wave Luminous 2 Womens (WHITE),45,219.99,6.5-12,31
+Mizuno Wave Luminous 2 Womens (BLACK),56,219.99,6.5-11,32
+New Bal Fresh Foam X 1080 V13 (blk),44,249.99,8-11--13--15,33
+New Bal Fresh Foam X 1080 V13 (wte),39,249.99,8-11--13--15,34
+New Bal Fresh Foam 880 V13 (2e),56,178.99,8-12--14,35
+New Bal Fresh Foam 880 V13 (D Wide) W (blk),78,178.99,6-11,36
+New Bal Fresh Foam 880 V13 (D Wide) W (blue),65,178.99,9,37
+On Cloud X 3 Mens (blk),47,245.89,7.5-14,38
+On Cloud X 3 Mens (wte),49,245.89,7.5-14,39
+On Cloudeclipse Mens (black),35,269.99,8.5-14,40
+On Cloudeclipse Mens (FLAME),33,269.99,10--12,41
+On Cloudflyer 4 Womens (WHITE HAY),27,179.90,7--9-11,42
+On Cloudflyer 4 Womens (BLACK WHITE),36,179.90,6-11,43
+Reebok Dmx Comfort+ Womens (ROSE),44,69.99,7-11,44
+Reebok Floatride Energy 5 Mens,59,99.99,7.5-9.5--11-13,45
+Reebok Court Advance Mens (blk),67,88.99,5-13,46
+Saucony Endorphin Pro 4 Mens,45,332.99,8-13,47
+Saucony Endorphin Speed 4 Mens,52,278.99,8--9.5-13,48
+Saucony Triumph 21 Womens (WHITE INDIGO),66,259.99,6.5-11,49
+Adidas Pro Brand,44,59.00,7-12,50
+Nike Max Brand,46,97.00,7-13,51
+A New Shoe Brand,55,99.00,6-12,52
+Sportsmax Brand,47,97.00,6-12,53
+Hoka Clifton 9 Mens,33,245.00,8-14,54
+Clown Sports Pro,66,88.00,9-16,55
+Veja Urca Womens (WHITE),78,250.00,6-10,56
+ABC sneakers,45,89.00,6-14,57

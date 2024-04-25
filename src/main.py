@@ -31,7 +31,7 @@ file_name="inventory_list.csv"
 if (not os.path.isfile(file_name)):
    print("Creating inventory file as it doesn't exist")
    f = open(file_name, "w")
-   f.write("ID_No,product,quantity,price,sizes_available_US\n")
+   f.write("product,quantity,price,sizes_available_US,ID_No\n")
    f.close()
 
 file_name2="updated_inventory_list.csv"
@@ -39,7 +39,7 @@ file_name2="updated_inventory_list.csv"
 if (not os.path.isfile(file_name2)):
    print("Creating inventory file as it doesn't exist")
    f = open(file_name2, "w")
-   f.write("ID_No,product,quantity,price,sizes_available_US\n")
+   f.write("product,quantity,price,sizes_available_US,ID_No\n")
    f.close()
 
 file_name3="sorted_inventory_list.csv"
@@ -47,7 +47,7 @@ file_name3="sorted_inventory_list.csv"
 if (not os.path.isfile(file_name3)):
    print("Creating inventory file as it doesn't exist")
    f = open(file_name3, "w")
-   f.write("ID_No,product,quantity,price,sizes_available_US\n")
+   f.write("product,quantity,price,sizes_available_US,ID_No\n")
    f.close()
 
 choice =""

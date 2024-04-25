@@ -54,11 +54,12 @@ def add_product(file_name):
     quantity = input("Enter the quantity: ")
     price = input("Enter the price, $: ")
     sizes_available_US = input("Enter the sizes available (use -- to indicate size unavailable): ")
-    
+
    # data = []
     with open(file_name, "a", newline='') as f:
         writer = csv.writer(f, delimiter=',')
-        writer.writerow([ID_No, product, quantity, price, sizes_available_US])
+        writer.writerow([product, quantity, price, sizes_available_US, ID_No])
+#I have to put ID No. at end because the "sort_alphabetically" function/list wasn't working properly with ID No. in first column, "sort_alphabetically" works much better with ID No in last column
 
     return print("New product added to the inventory list")
 
@@ -109,7 +110,7 @@ def update_product(file_name2):
     
     with open(file_name2, "a", newline='') as f2:
         writer = csv.writer(f2)
-        writer.writerow([ID_No, product, quantity, price, sizes_available_US])
+        writer.writerow([product, quantity, price, sizes_available_US, ID_No])
 
 #I originally wanted (thought the user could) modify this data individually/separately in each row, ie. separate functions/options for update quantity, price, sizes_available_US, and it wouldn't be much different than add_product function,
 #but that doesn't seem to be as possible or easy, haven't seen a good example for this situation with a csv, so the solution for now is adding the updated rows to another file, updated_inventory_list.csv               
