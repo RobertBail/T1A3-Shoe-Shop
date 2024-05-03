@@ -80,7 +80,7 @@ while choice!="11":
    elif (choice == "10"):
       product_data(api_url)
    elif (choice == "11"):
-      print("You have exited the inventory")
+      print("You have exited the inventory...")
    else:
       print("Please only enter the options shown above")
 
