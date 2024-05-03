@@ -17,7 +17,7 @@ def create_menu():
     print("7. Enter 7 to remove a product from Sorted Inventory List")
     print("8. Enter 8 to update quantity, price, sizes available of a product")
     print("9. Enter 9 to sort list alphabetically")
-    print("10. Enter 10 to view shoe retail data")
+    print("10. Enter 10 to view widespread shoe retail data (US data)")
     print("11. Enter 11 to exit")
 #add sort list alphabetically function?
     user_choice = input("Enter your selection: ")

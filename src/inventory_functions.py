@@ -18,7 +18,6 @@ def product_data(api_url):
     print(response.json())
 
 
-
 def view_inventory(file_name):
     try:
         with open(file_name, "r", newline='') as f:        
