@@ -3,7 +3,7 @@ import os.path
 #from prettytable import PrettyTable
 
 from inventory_functions import (view_inventory, view_updated_inventory, view_sorted_inventory, 
-add_product, remove_product_list, remove_product_UpdatedList, remove_product_SortedList, update_product, read_csv)
+add_product, remove_product_list, remove_product_UpdatedList, remove_product_SortedList, update_product, read_csv, product_data)
 
 print("Welcome to the Shoe Shop Inventory!")
 
@@ -17,7 +17,8 @@ def create_menu():
     print("7. Enter 7 to remove a product from Sorted Inventory List")
     print("8. Enter 8 to update quantity, price, sizes available of a product")
     print("9. Enter 9 to sort list alphabetically")
-    print("10. Enter 10 to exit")
+    print("10. Enter 10 to view shoe retail data")
+    print("11. Enter 11 to exit")
 #add sort list alphabetically function?
     user_choice = input("Enter your selection: ")
     print(user_choice)
@@ -27,6 +28,7 @@ file_name="inventory_list.csv"
 #data = view_inventory(file_name)
 #sorted_data = sort_alphabetically(data)
 #data = list
+api_url="https://amazon-merchant-data.p.rapidapi.com/search-products"
 
 if (not os.path.isfile(file_name)):
    print("Creating inventory file as it doesn't exist")
@@ -52,7 +54,7 @@ if (not os.path.isfile(file_name3)):
 
 choice =""
 
-while choice!="10":
+while choice!="11":
    choice = create_menu()
    if(choice == "1"):
       view_inventory(file_name)
@@ -76,6 +78,8 @@ while choice!="10":
        #write_csv(file_name, sorted_data)
        #sort_csv(file_name)
    elif (choice == "10"):
+      product_data(api_url)
+   elif (choice == "11"):
       print("You have exited the inventory")
    else:
       print("Please only enter the options shown above")

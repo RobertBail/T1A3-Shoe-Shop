@@ -5,15 +5,19 @@ import json
 #import itertools
 from prettytable import PrettyTable
 
-#def fetch_data_with_auth(api_url, api_key):
- #   headers = {"Authorization": f"Bearer {api_key}"}
-  #  response = requests.get(api_url, headers=headers)
- #   return response
-# Example usage:
-# api_url = "https://api.example.com/data"
-#api_key = "your_api_key_here"
-#data_response = fetch_data_with_auth(api_url, api_key)
-# print(data_response.json())
+def product_data(api_url):
+    api_url= "https://amazon-merchant-data.p.rapidapi.com/search-products"
+    querystring = {"term":"shoes","country":"us"}
+    headers = {
+	"X-RapidAPI-Key": "1f43f6d9acmsh5e30329605fec9fp1f3b76jsnde6a9580f284",
+	"X-RapidAPI-Host": "amazon-merchant-data.p.rapidapi.com"
+}
+
+    response = requests.get(api_url, headers=headers, params=querystring)
+
+    print(response.json())
+
+
 
 def view_inventory(file_name):
     try:
