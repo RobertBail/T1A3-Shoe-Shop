@@ -72,49 +72,62 @@ def add_product(file_name):
     sizes_available_US = input("Enter the sizes available (use -- to indicate size unavailable): ")
 
    # data = []
-    with open(file_name, "a", newline='') as f:
-        writer = csv.writer(f, delimiter=',')
-        writer.writerow([product, quantity, price, sizes_available_US, ID_No])
+   try:
+     with open(file_name, "a", newline='') as f:
+          writer = csv.writer(f, delimiter=',')
+          writer.writerow([product, quantity, price, sizes_available_US, ID_No])
 #I have to put ID No. at end because the "sort_alphabetically" function/list wasn't working properly with ID No. in first column, "sort_alphabetically" works much better with ID No in last column
 
-    return print("New product added to the inventory list")
+     return print("New product added to the inventory list")
+    except FileNotFoundError:
+        return []
 
 
 def remove_product_list(file_name):
     ID_No = input("Enter the ID number of product that will be removed: ")
     inventory_list = []
-    with open(file_name, "r") as f:
-         reader = csv.reader(f)
-         for row in reader:
-             if (ID_No != row[0]):
-              inventory_list.append(row)
-    with open(file_name, "w") as f:
-         writer = csv.writer(f)
-         writer.writerows(inventory_list)
+     try:
+       with open(file_name, "r") as f:
+            reader = csv.reader(f)
+            for row in reader:
+              if (ID_No != row[0]):
+               inventory_list.append(row)
+       with open(file_name, "w") as f:
+            writer = csv.writer(f)
+            writer.writerows(inventory_list)
+      except FileNotFoundError:
+        return []
 
 def remove_product_UpdatedList(file_name2):
     ID_No = input("Enter the ID number of product that will be removed: ")
     inventory_list = []
-    with open(file_name2, "r") as f:
-         reader = csv.reader(f)
-         for row in reader:
-             if (ID_No != row[0]):
-              inventory_list.append(row)
-    with open(file_name2, "w") as f:
-         writer = csv.writer(f)
-         writer.writerows(inventory_list)
+     try:
+       with open(file_name2, "r") as f:
+            reader = csv.reader(f)
+            for row in reader:
+              if (ID_No != row[0]):
+               inventory_list.append(row)
+       with open(file_name2, "w") as f:
+            writer = csv.writer(f)
+            writer.writerows(inventory_list)
+     except FileNotFoundError:
+        return []
+
 
 def remove_product_SortedList(file_name3):
     ID_No = input("Enter the ID number of product that will be removed: ")
     inventory_list = []
-    with open(file_name3, "r") as f:
-         reader = csv.reader(f)
-         for row in reader:
-             if (ID_No != row[0]):
-              inventory_list.append(row)
-    with open(file_name3, "w") as f:
-         writer = csv.writer(f)
-         writer.writerows(inventory_list)
+      try:
+       with open(file_name3, "r") as f:
+            reader = csv.reader(f)
+            for row in reader:
+              if (ID_No != row[0]):
+               inventory_list.append(row)
+       with open(file_name3, "w") as f:
+            writer = csv.writer(f)
+            writer.writerows(inventory_list)
+      except FileNotFoundError:
+        return []
 
 def update_product(file_name2):
     print("*Updating a product in the inventory list*")
@@ -123,10 +136,12 @@ def update_product(file_name2):
     quantity = input("Enter the updated quantity: ")
     price = input("Enter the updated price, $: ")
     sizes_available_US = input("Enter the updated Sizes Available (US): ")
-    
-    with open(file_name2, "a", newline='') as f2:
-        writer = csv.writer(f2, delimiter=',')
-        writer.writerow([product, quantity, price, sizes_available_US, ID_No])
+     try:
+       with open(file_name2, "a", newline='') as f2:
+           writer = csv.writer(f2, delimiter=',')
+           writer.writerow([product, quantity, price, sizes_available_US, ID_No])
+     except FileNotFoundError:
+        return []
 #I originally wanted (thought the user could) modify this data individually/separately in each row, ie. separate functions/options for update quantity, price, sizes_available_US, and it wouldn't be much different than add_product function,
 #but that doesn't seem to be as possible or easy, haven't seen a good example for this situation with a csv, so the solution for now is adding the updated rows to another file, updated_inventory_list.csv               
 
@@ -135,10 +150,13 @@ def update_product(file_name2):
 #def update_sizes_available(file_name):
 
 def read_csv(file_name):
-     with open(file_name, "r", newline='') as f:        
+     try:
+       with open(file_name, "r", newline='') as f:        
              reader = csv.reader(f)
              data = list(reader)
              return data
+     except FileNotFoundError:
+        return []
 
 def sort_alphabetically(data):
           print(data)
@@ -150,9 +168,12 @@ def sort_alphabetically(data):
           #len or range
 
 def write_csv(file_name, sorted_data):
-      with open(file_name, 'w', newline='') as csv_file:
-          writer = csv.writer(csv_file)
-          writer.writerows(sorted_data)
+      try:
+        with open(file_name, 'w', newline='') as csv_file:
+           writer = csv.writer(csv_file)
+           writer.writerows(sorted_data)
+      except FileNotFoundError:
+        return []
 
 def sort_csv(file_name):
     data = read_csv(file_name)
