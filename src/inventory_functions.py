@@ -16,7 +16,8 @@ def product_data(api_url):
     response = requests.get(api_url, headers=headers, params=querystring)
 
     print(response.json())
-
+#https://acho.io/blogs/how-to-pull-data-from-an-api
+#I tried looking up how (ie. code format) to display this product API data in a PrettyTable but didn't see a good example and possibly too complicated for this data
 
 def view_inventory(file_name):
     try:
@@ -63,7 +64,7 @@ def view_sorted_inventory(file_name3):
 def add_product(file_name):
     print("*Add a product to the inventory list*")
     ID_No = input("Enter new product ID number (add to last): ")
-#(above) I was trying to find how to auto-increment this ideally, but couldn't find a great example/solution for this format/situation, 
+#I was trying to find how to auto-increment ID_No ideally, but couldn't find a great example/solution for this format/situation, 
 #eg. they often involved several more steps and a bit confusing, or didn't look to suit this purpose
     product = input("Enter the product: ")
     quantity = input("Enter the quantity: ")
@@ -126,7 +127,6 @@ def update_product(file_name2):
     with open(file_name2, "a", newline='') as f2:
         writer = csv.writer(f2, delimiter=',')
         writer.writerow([product, quantity, price, sizes_available_US, ID_No])
-
 #I originally wanted (thought the user could) modify this data individually/separately in each row, ie. separate functions/options for update quantity, price, sizes_available_US, and it wouldn't be much different than add_product function,
 #but that doesn't seem to be as possible or easy, haven't seen a good example for this situation with a csv, so the solution for now is adding the updated rows to another file, updated_inventory_list.csv               
 
