@@ -1,7 +1,19 @@
 import os
 import csv
+import requests
+import json
 #import itertools
 from prettytable import PrettyTable
+
+#def fetch_data_with_auth(api_url, api_key):
+ #   headers = {"Authorization": f"Bearer {api_key}"}
+  #  response = requests.get(api_url, headers=headers)
+ #   return response
+# Example usage:
+# api_url = "https://api.example.com/data"
+#api_key = "your_api_key_here"
+#data_response = fetch_data_with_auth(api_url, api_key)
+# print(data_response.json())
 
 def view_inventory(file_name):
     try:
