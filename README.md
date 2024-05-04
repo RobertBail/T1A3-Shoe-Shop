@@ -160,7 +160,7 @@ Testing the app:
 ![Testing the app](docs/trello4.png "Testing the app")
 
 ## Testing
-Testing of this application has been regularly conducted to ensure its efficient function. One noticeable bug to be aware of is sometimes when using Add Product, Sort Alphabetically, or Update Product, the respective lists don't immediately update when using the "View..." features afterwards. Exiting then relaunching the application, or exiting the terminal and relaunching "python3 main.py" can have these lists properly updated.
+Testing of this application has been regularly conducted to ensure its efficient function. One noticeable bug to be aware of is sometimes when using Add Product, Sort Alphabetically, or Update Product, the respective lists don't immediately update when using the "View..." features afterwards. Exiting then relaunching the application, or exiting and re-entering the terminal and relaunching "python3 main.py" can have these lists properly updated.
 
 ## Dependencies And Installation
 The installation and use of Python 3 is required to run this application. This application also uses prettytable version 3.10.0, os, csv, requests and json. In future, I may add colored version 2.2.4. and wcwidth version 0.2.13 if necessary.
