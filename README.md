@@ -180,8 +180,11 @@ Viewing Updated Inventory Table:
 Viewing Alphabetically-Sorted Table:
 ![View Alphabetically-Sorted Table](docs/Alphabetically-Sorted-List-screenshot.png "View Alphabetically-Sorted Table")
 
+Viewing Shoe Retail Data:
+![Viewing Shoe Retail Data](docs/shoe_data_api.png "Viewing Shoe Retail Data")
+
 Exiting the App:
-![Exiting App](docs/exiting-app-screenshot.png "Exiting App")
+![Exiting App](docs/exiting-app-screenshot2.png "Exiting App")
 
 ## References
 
