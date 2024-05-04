@@ -8,6 +8,7 @@ Staff of this shoe shop can:
 - update product information, including quantity, price, and sizes available (US)
 
 [Github Repository](https://github.com/RobertBail/T1A3-Shoe-Shop)
+
 [Trello Board](https://trello.com/b/GFoxB2dv/shoe-shop-inventory)
 
 ## Table of Contents
@@ -143,14 +144,19 @@ The code for this application was written in accordance with the [PEP 8 Style Gu
 ## Implementation Plan
 I used Trello to overall plan the development of this application, such as the completion of each feature, the initial collection of shoe product data for the inventory_list.csv, for which I primarily referred to The Athlete's Foot website for some indication, and completion of testing. The Sort Alphabetically and View Shoe Retail Data features I decided to add in later on during developement, because I became aware these might be useful or necessary to the shoe shop staff. I have left "price (including update)" and "quantity (add and update)" unchecked because these update features haven’t gone as originally intended.
 
+Trello Main View:
 ![Trello Main View](docs/trello-main.png "Trello Main View")
 
+Trello To-Do:
 ![Viewing Trello To-Do](docs/trello1.png "Viewing Trello To-Do")
 
+Trello To-Do Comments:
 ![Viewing To-Do Comments](docs/trello2.png "Viewing To-Do Comments")
 
+Completing the Inventory CSV:
 ![Completing the Inventory CSV](docs/trello3.png "Completing the Inventory CSV")
 
+Testing the app:
 ![Testing the app](docs/trello4.png "Testing the app")
 
 ## Testing
@@ -165,12 +171,16 @@ Run the "run.sh" bash script which will set up a virtual environment and start t
 ## Using the Application
 After the app is properly installed, you can enter "python3 main.py" in the terminal to start this application. Shoe shop staff can navigate to different features and complete tasks by following the prompts in the menu. A few examples of using the Shoe Shop inventory app are displayed below.
 
+Viewing Inventory Table:
 ![View Inventory Table](docs/inventory-table1.png "View Inventory Table")
 
+Viewing Updated Inventory Table:
 ![View Updated Inventory Table](docs/updated-list-screenshot2.png "View Updated Inventory Table")
 
+Viewing Alphabetically-Sorted Table:
 ![View Alphabetically-Sorted Table](docs/Alphabetically-Sorted-List-screenshot.png "View Alphabetically-Sorted Table")
 
+Exiting the App:
 ![Exiting App](docs/exiting-app-screenshot.png "Exiting App")
 
 ## References
