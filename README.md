@@ -172,7 +172,7 @@ Run the "run.sh" bash script which will set up a virtual environment and start t
 After the app is properly installed, you can enter "python3 main.py" in the terminal to start this application. Shoe shop staff can navigate to different features and complete tasks by following the prompts in the menu. A few examples of using the Shoe Shop inventory app are displayed below.
 
 Viewing Inventory Table:
-![View Inventory Table](docs/inventory-table1.png "View Inventory Table")
+![View Inventory Table](docs/inventory-table1-screenshot.png "View Inventory Table")
 
 Viewing Updated Inventory Table:
 ![View Updated Inventory Table](docs/updated-list-screenshot2.png "View Updated Inventory Table")
