@@ -1,11 +1,12 @@
 # T1A3-Shoe-Shop
 This is a terminal application which will assist a shoe shop with keeping track of its stock. 
 Staff of this shoe shop can:
-- view industry-wide product information
-- view three lists of their inventory, including alphabetically-sorted and updated
+- view three types of lists of their inventory, including alphabetically-sorted and updated
 - add products to the inventory list, including quantity, price, and sizes available (US)
 - remove products from these lists
 - update product information, including quantity, price, and sizes available (US)
+- use the sort-alphabetically function for the inventory list
+- view industry-wide product information
 
 [Github Repository](https://github.com/RobertBail/T1A3-Shoe-Shop)
 
