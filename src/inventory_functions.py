@@ -5,20 +5,6 @@ import json
 #import itertools
 from prettytable import PrettyTable
 
-def product_data(api_url):
-    api_url= "https://amazon-merchant-data.p.rapidapi.com/search-products"
-    querystring = {"term":"shoes","country":"us"}
-    headers = {
-	"X-RapidAPI-Key": "1f43f6d9acmsh5e30329605fec9fp1f3b76jsnde6a9580f284",
-	"X-RapidAPI-Host": "amazon-merchant-data.p.rapidapi.com"
-}
-
-    response = requests.get(api_url, headers=headers, params=querystring)
-
-    print(response.json())
-#https://acho.io/blogs/how-to-pull-data-from-an-api
-#I tried looking up how (ie. code format) to display this product API data in a PrettyTable but didn't see a good example and possibly too complicated for this data
-
 def view_inventory(file_name):
     try:
         with open(file_name, "r", newline='') as f:        
@@ -98,7 +84,7 @@ def remove_product_list(file_name):
     except FileNotFoundError:
         return []
 
-def remove_product_UpdatedList(file_name2):
+def remove_product_updatedlist(file_name2):
     ID_No = input("Enter the ID number of product that will be removed: ")
     inventory_list = []
     try:
@@ -114,7 +100,7 @@ def remove_product_UpdatedList(file_name2):
         return []
 
 
-def remove_product_SortedList(file_name3):
+def remove_product_sortedlist(file_name3):
     ID_No = input("Enter the ID number of product that will be removed: ")
     inventory_list = []
     try:
@@ -169,7 +155,7 @@ def sort_alphabetically(data):
 
 def write_csv(file_name, sorted_data):
       try:
-        with open(file_name, 'w', newline='') as csv_file:
+        with open(file_name, "w", newline='') as csv_file:
            writer = csv.writer(csv_file)
            writer.writerows(sorted_data)
       except FileNotFoundError:
@@ -180,5 +166,19 @@ def sort_csv(file_name):
     sorted_data = sort_alphabetically(data)
     write_csv("sorted_" + file_name, sorted_data)
 
-sort_csv('inventory_list.csv')
+sort_csv("inventory_list.csv")
 #or sorted_inventory_list.csv
+
+def product_data(api_url):
+    api_url= "https://amazon-merchant-data.p.rapidapi.com/search-products"
+    querystring = {"term":"shoes","country":"us"}
+    headers = {
+	"X-RapidAPI-Key": "1f43f6d9acmsh5e30329605fec9fp1f3b76jsnde6a9580f284",
+	"X-RapidAPI-Host": "amazon-merchant-data.p.rapidapi.com"
+}
+
+    response = requests.get(api_url, headers=headers, params=querystring)
+
+    print(response.json())
+#https://acho.io/blogs/how-to-pull-data-from-an-api
+#I tried looking up how (ie. code format) to display this product API data in a PrettyTable or other table but didn't see a good example and possibly too complicated for this data, how it's displayed in terminal

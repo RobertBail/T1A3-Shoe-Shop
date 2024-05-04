@@ -1,9 +1,12 @@
 import os.path
 #from colored import Fore, Back, Style
 #from prettytable import PrettyTable
+# (colored==2.2.4)
+# (wcwidth==0.2.13)
+
 
 from inventory_functions import (view_inventory, view_updated_inventory, view_sorted_inventory, 
-add_product, remove_product_list, remove_product_UpdatedList, remove_product_SortedList, update_product, read_csv, product_data)
+add_product, remove_product_list, remove_product_updatedlist, remove_product_sortedlist, update_product, read_csv, product_data)
 
 print("Welcome to the Shoe Shop Inventory!")
 
@@ -67,9 +70,9 @@ while choice!="11":
    elif (choice == "5"):
       remove_product_list(file_name)
    elif (choice =="6"):
-      remove_product_UpdatedList(file_name2)
+      remove_product_updatedlist(file_name2)
    elif (choice =="7"):  
-      remove_product_SortedList(file_name3)
+      remove_product_sortedlist(file_name3)
    elif (choice == "8"):
       update_product(file_name2)
    elif (choice == "9"):

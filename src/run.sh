@@ -4,7 +4,7 @@ if check_python; then
     if start_venv; then
         echo "Checks all good. Starting application.."
         python3 main.py
-# or ./modules/main.py
+
     else
         echo "Error: Failed to set up virtual environment and install dependencies."
         exit 2
