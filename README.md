@@ -182,22 +182,28 @@ After the app is properly installed, you can enter "python3 main.py" in the term
 Viewing Inventory Table:
 ![View Inventory Table](docs/inventory-table1-screenshot.png "View Inventory Table")
 
-Adding a Product to Inventory:
+Adding a Product to Inventory, the prompts:
+![Adding Product](docs/adding-product1.png "Adding Product")
+
+Adding a Product to Inventory, the resultant table:
+![Adding Product Resultant Table](docs/adding-product2.png "Adding Product Resultant Table")
 
 After adding a new product to the inventory list, staff can enter 9 to have this list updated/rearranged into alphabetical order, which will appear in the Alphabetically-Sorted Table. Please enter 3 to view the latest Alphabetically-Sorted Table.
 
 Viewing Alphabetically-Sorted Table:
+![Viewing Alphabetically-Sorted Table](docs/Alphabetically-Sorted-List-latest.png "Viewing Alphabetically-Sorted Table")
 
 Updating a Product in Inventory:
+![Updating Product In Inventory](docs/updating-product1.png "Updating Product In Inventory")
 
 Viewing Updated Inventory Table:
-![View Updated Inventory Table](docs/updated-list-screenshot2.png "View Updated Inventory Table")
+![View Updated Inventory Table](docs/viewing-updated-list.png "View Updated Inventory Table")
 
-Removing a product from a list:
+Removing a product from a list, the prompts:
+![Removing Product From List](docs/remove-product-demo1.png "Removing Product From List")
 
-
-
-
+Removing a product from a list, the resultant table:
+![Removing Product From List Resultant Table](docs/remove-product-demo2.png "Removing Product From List Resultant Table")
 
 Viewing Shoe Retail Data:
 ![Viewing Shoe Retail Data](docs/shoe_data_api.png "Viewing Shoe Retail Data")
