@@ -85,7 +85,7 @@ def remove_product_list(file_name):
               if (product != row[0]):
                inventory_list.append(row)
         with open(file_name, "w") as f:
-             writer = csv.writer(f, delimiter=',')
+             writer = csv.writer(f)
              writer.writerows(inventory_list) 
         return print("*This product is now removed from the inventory list*")        
     except FileNotFoundError:
