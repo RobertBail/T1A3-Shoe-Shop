@@ -1,5 +1,5 @@
 # T1A3-Shoe-Shop
-This is a terminal application which will assist a shoe shop with keeping track of its stock. 
+This is a terminal application which will assist a shoe shop with keeping track of its stock, eg. for stocktaking purposes. 
 Staff of this shoe shop can:
 - view three types of lists of their inventory, including alphabetically-sorted and updated
 - add products to the inventory list, including quantity, price, and sizes available (US)
