@@ -16,20 +16,22 @@ Staff of this shoe shop can:
 
 - [Features](#features)
   - [View Inventory](#view-inventory)
-  - [View Updated Inventory](#view_updated_inventory)
-  - [View Sorted Inventory](#view_sorted_inventory)
-  - [Add Product](#add_product)
-  - [Remove Product From List](#remove_product_from_list)
-  - [Remove Product From Updated List](#remove_product_from_updated_list)
-  - [Remove Product From Sorted List](#remove_product_from_sorted_list)
+  - [View Updated Inventory](#view-updated-inventory)
+  - [View Sorted Inventory](#view-sorted-inventory)
+  - [Add Product](#add-product)
+  - [Remove Product From List](#remove-product-from-list)
+  - [Remove Product From Updated List](#remove-product-from-updated-list)
+  - [Remove Product From Sorted List](#remove-product-from-sorted-list)
   - [Update Product](#update-product)
-  - [Sort Alphabetically](#sort_alphabetically)
+  - [Sort Alphabetically](#sort-alphabetically)
   - [View Shoe Retail Data](#view-shoe-retail-data)
 - [Code Style Guide](#code-style-guide)
 - [Implementation Plan](#implementation-plan)
   - [Project Management Screenshots](#project-management-screenshots)
-- [Testing](#testing)
-- [Dependencies And Installation](#dependencies_and_installation)
+- [Help Documentation](#help-documentation)
+  - [Testing](#testing)
+  - [Dependencies And Installation](#dependencies-and-installation)
+  - [Using the Application](#using-the-application)
 - [References](#references)
 
 ## Features
@@ -68,11 +70,11 @@ The code for this feature involves:
 This feature allows staff to remove a product from the inventory list, ie. inventory_list.csv, if necessary.
 
 The code for this feature involves:
-- implementing a user input for staff to manually enter the ID number of the product that will be removed
+- implementing a user input for staff to manually enter the product name/type that will be removed
 - implementing "inventory_list = []" to declare the list and its contents
 - the use of "r" for read mode
 - the Python "reader" for the csv file
-- stating "if (ID_No != row[0]):" to refer to rows other than the top row for row removal
+- stating "if (product != row[0]):" to refer to rows other than the top row for row removal
 - the Python "w" mode for writing/rewriting the resultant csv file
 - stating "writer.writerows(inventory_list)" for the resultant/remaining rows in the list
 - handling a FileNotFoundError exception, and the use of "try" for this error-handling
@@ -160,26 +162,42 @@ Completing the Inventory CSV:
 Testing the app:
 ![Testing the app](docs/trello4.png "Testing the app")
 
-## Testing
-Testing of this application has been regularly conducted to ensure its efficient function. One noticeable bug to be aware of is sometimes when using Add Product, Sort Alphabetically, or Update Product, the respective lists don't immediately update when using the "View..." features afterwards. Exiting then relaunching the application, or exiting then re-entering the terminal and relaunching "python3 main.py" can have these lists properly updated.
+## Help Documentation
 
-## Dependencies And Installation
+### Testing
+Testing of this application has been regularly conducted to ensure its efficient function. One noticeable bug to be aware of is sometimes when using Add Product, Sort Alphabetically, or Update Product, the respective lists don't immediately update when using the "View..." features afterwards. With my developing knowledge of Python so far, I haven't been sure how to improve this in the code, where possible. Solutions/work-arounds to this problem include:
+
+- Exiting then relaunching the application, or exiting then re-entering the terminal and relaunching "python3 main.py" can have these lists properly updated.
+- Another solution for adding and updating product is to go through "add product" or "update product" again, but just pressing enter for all the questions/prompts, which will add a blank space. Please delete this blank space afterwards by entering 5 (to remove from Inventory List) or 6 (to remove from Updated Inventory List), then just pressing enter.
+
+### Dependencies And Installation
 The installation and use of Python 3 is required to run this application. This application also uses prettytable version 3.10.0, os, csv, requests and json. In future, I may add colored version 2.2.4. and wcwidth version 0.2.13 if necessary.
 
 To install this app, download the "src" folder containing the source code of the project.
 Run the "run.sh" bash script which will set up a virtual environment and start the application for you automatically.
 
-## Using the Application
-After the app is properly installed, you can enter "python3 main.py" in the terminal to start this application. Shoe shop staff can navigate to different features and complete tasks by following the prompts in the menu. A few examples of using the Shoe Shop inventory app are displayed below.
+### Using the Application
+After the app is properly installed, you can enter "python3 main.py" in the terminal to start this application. Shoe shop staff can navigate to different features and complete tasks by following the prompts in the menu. Some examples of using the Shoe Shop inventory app are displayed below. 
 
 Viewing Inventory Table:
 ![View Inventory Table](docs/inventory-table1-screenshot.png "View Inventory Table")
 
+Adding a Product to Inventory:
+
+After adding a new product to the inventory list, staff can enter 9 to have this list updated/rearranged into alphabetical order, which will appear in the Alphabetically-Sorted Table. Please enter 3 to view the latest Alphabetically-Sorted Table.
+
+Viewing Alphabetically-Sorted Table:
+
+Updating a Product in Inventory:
+
 Viewing Updated Inventory Table:
 ![View Updated Inventory Table](docs/updated-list-screenshot2.png "View Updated Inventory Table")
 
-Viewing Alphabetically-Sorted Table:
-![View Alphabetically-Sorted Table](docs/Alphabetically-Sorted-List-screenshot.png "View Alphabetically-Sorted Table")
+Removing a product from a list:
+
+
+
+
 
 Viewing Shoe Retail Data:
 ![Viewing Shoe Retail Data](docs/shoe_data_api.png "Viewing Shoe Retail Data")
